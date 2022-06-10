@@ -1,0 +1,121 @@
+* {
+	box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	padding:24px;
+	font-family:'Source Sans Pro', sans-serif;
+	margin:0;
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* modal */
+.profile-modal {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pm-content {
+	position: absolute;
+	max-width: 600px;
+	min-width: 520px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 1px 3px 13px rgba(0, 0, 0, 0.8);
+    background-color: #f2f2f2;
+    color: #1f1c1c;
+	line-height: 1.5;
+	border: none;
+    justify-content: center;
+    align-items: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.pm-content p{
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+    color: #4b1111;
+    text-shadow: 1px 2px 6px rgba(36, 36, 36, .0078431373);
+    top:40%;
+    left:10%;
+    width:80%;
+}
+
+.pm-content span.close_btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #dd9933;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	border-radius: 0 10px 0 4px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 900;
+	-webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+	user-select: none;
+}
+
+/* buttons */
+.btn-list{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-list p, .btn{
+    display: inline;
+}
+
+.btn-list p{
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+.btn{
+    border: 0;
+}
+
+.btn_img {
+    height: 20px;
+    width: 20px;
+    height: 15px;
+}
+
+.btn:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+
+.delete_contact {
+    display: block;
+    margin: 10px 45%;
+	color: #ffffff;
+    background-color: #0fdf0f;
+    border-radius: 0.6vmin;
+    border: 0;
+    width: 10%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+    text-shadow: 1px 2px 6px rgba(36, 36, 36, .0078431373);
+}
